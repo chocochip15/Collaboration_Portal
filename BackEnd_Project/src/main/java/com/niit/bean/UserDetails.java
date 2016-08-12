@@ -9,36 +9,38 @@ import javax.persistence.Table;
 
 @Entity
 public class UserDetails implements Serializable {
-	private String Name;
+	private String name;
 	@Id
-	private String Id;
-	private String Password;
+	private String id;
+	private String password;
 	private String email;
 	private String role;
 	private String status;
 
+	
+
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(String id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 	public String getEmail() {
