@@ -1,10 +1,14 @@
 package com.niit.dao;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.bean.UserDetails;
-
+@Transactional
+@EnableTransactionManagement
 public class UserDetailsDAOImpl implements UserDetailsDAO{
 	@Autowired
 	private SessionFactory sessionFactory;

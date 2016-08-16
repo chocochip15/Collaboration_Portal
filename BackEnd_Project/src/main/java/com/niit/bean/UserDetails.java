@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+
 public class UserDetails implements Serializable {
 	private String name;
 	@Id
