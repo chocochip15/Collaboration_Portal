@@ -7,8 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class UserDetails implements Serializable {
 	private String name;
 	@Id

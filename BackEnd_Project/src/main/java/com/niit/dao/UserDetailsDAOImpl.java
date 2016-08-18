@@ -44,7 +44,7 @@ public class UserDetailsDAOImpl implements UserDetailsDAO{
 
 		return listUserDetails;
 	}
-	/*get the user details on the basis of id */
+	/*Get the user details on the basis of id */
 	public UserDetails getByID(String id)
 	{
 		Session f =sessionFactory.getCurrentSession();
