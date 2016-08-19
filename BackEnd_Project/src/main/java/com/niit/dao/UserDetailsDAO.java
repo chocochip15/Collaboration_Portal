@@ -9,5 +9,6 @@ public interface UserDetailsDAO {
 	public List<UserDetails> list();
 	public void deleteByID(String id);
 	public UserDetails getByID(String id);
+	public boolean isUserExsit(UserDetails userdetails);
 
 }

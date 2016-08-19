@@ -25,15 +25,15 @@ public class UserDetailsController {
 	UserDetailsDAO userdetailsDAO;
 /*Create a User*/
 	@RequestMapping(value = "/users", method = RequestMethod.POST)
-	public ResponseEntity<Void> createUser(@RequestParam("id") String id ,@RequestBody  UserDetails userDetails,
+	public ResponseEntity<Void> createUser(@RequestBody  UserDetails userDetails,
 			UriComponentsBuilder ucBuilder) {
-		 System.out.println("Creating User " + userDetails.getName());
+		/* System.out.println("Creating User " + userDetails.getName());
 
 	
-		  if (userdetailsDAO.getByID(id)!=null) {
+		  if (userdetailsDAO.isUserExsit(userDetails)) {
 		  System.out.println("A User with ID " + userDetails.getId() +
 		  " already exist"); return new
-		  ResponseEntity<Void>(HttpStatus.CONFLICT); }
+		  ResponseEntity<Void>(HttpStatus.CONFLICT); }*/
 		 
 		/*System.out.println(str);
 		UserDetails user=null;
@@ -78,7 +78,7 @@ public class UserDetailsController {
 	        return new ResponseEntity<UserDetails>(HttpStatus.NO_CONTENT);
 	    }
 	/*Retrieve all users*/
-	  @RequestMapping(value = "/users/", method = RequestMethod.GET)
+	  @RequestMapping(value = "/users", method = RequestMethod.GET)
 	    public ResponseEntity<List<UserDetails>> listAllUsers() {
 	        List<UserDetails> users = userdetailsDAO.list();
 	        if(users.isEmpty()){
@@ -109,7 +109,12 @@ public class UserDetailsController {
 	            return new ResponseEntity<UserDetails>(HttpStatus.NOT_FOUND);
 	        }
 	 
-	      
+	  currentUser.setName(userdetails.getName());
+	  currentUser.setEmail(userdetails.getEmail());
+	  currentUser.setPassword(userdetails.getPassword());
+	  currentUser.setRole(userdetails.getRole());
+	  currentUser.setStatus(userdetails.getStatus());
+	  
 	         
 	        userdetailsDAO.saveOrUpdate(currentUser);
 	        return new ResponseEntity<UserDetails>(currentUser, HttpStatus.OK);

@@ -60,4 +60,9 @@ public void deleteByID(String id) {
 		UserDetails p =(UserDetails)f.load(UserDetails.class, new String(id));		
 		f.delete(p);
 	}
+public boolean isUserExsit(UserDetails userdetails)
+{
+	return getByID(userdetails.getId())!=null;
 }
+}
+
