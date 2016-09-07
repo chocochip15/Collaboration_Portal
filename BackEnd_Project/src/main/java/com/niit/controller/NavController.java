@@ -9,7 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class NavController {
 	@RequestMapping("/")
 	public ModelAndView getIndexPage() {
-		ModelAndView modelandview= new ModelAndView("UserRegistration");
+		System.out.println("hi");
+		ModelAndView modelandview= new ModelAndView("User_Registration");
 		return modelandview;
     }
 

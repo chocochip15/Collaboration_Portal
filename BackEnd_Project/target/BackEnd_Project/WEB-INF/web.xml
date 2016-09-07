@@ -13,6 +13,7 @@
 
 		<param-value>
 			/WEB-INF/spring-dispatcher-servlet.xml
+			/WEB-INF/spring-application-context.xml
 		</param-value>
 	</context-param>
 
