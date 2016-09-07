@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Landing Page</title>
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+<!-- Give hash before givinig the mapping in the navbar -->
+<h1>Landing Page</h1>
+<nav class="navbar navbar-inverse" >
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" >
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/Job_Opportunities">Job Opportunities</a></li>
+        <li><a href="#/Sign_up">Sign Up</a></li>
+        <li><a href="#/About_us">About Us</a></li>
+         <li><a href="#/Events">Events</a></li>
+      </ul>
+      
+  </div>
+</nav>
+
+<div ng-view></div>
+<!-- add the controllers and services -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-resource.js"></script>
+ <script src="app.js"></script>
+ <script src="c_register/user_controller.js"></script>
+<script src="c_register/user_service.js"></script>
+</body>
+</html>

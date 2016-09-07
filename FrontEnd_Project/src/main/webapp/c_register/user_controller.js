@@ -38,6 +38,14 @@ App.controller('UserController', ['$scope', 'User', function($scope, User) {
                   self.createUser();
             
           };
-               
+               self.edit=function(id)
+               {
+            	   console.log('id to be edited' ,id);
+            	   if(self.user.id==id)
+            		   {
+            		   self.user=angular.copy(self.users[i]);
+            		  
+            		   }
+               }
      
       }]);
