@@ -1,4 +1,4 @@
-App.factory('User', ['$resource', function ($resource) {
+/*App.factory('User', ['$resource', function ($resource) {
     //$resource() function returns an object of resource class
     return $resource(
             'http://localhost:8181/BackEnd_project/users/:id', 
@@ -10,4 +10,4 @@ App.factory('User', ['$resource', function ($resource) {
                  
             }
     );
-}]);
+}]);*/

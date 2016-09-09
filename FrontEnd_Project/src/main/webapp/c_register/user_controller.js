@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
  
 App.controller('UserController', ['$scope', 'User', function($scope, User) {
           var self = this;
@@ -48,4 +48,4 @@ App.controller('UserController', ['$scope', 'User', function($scope, User) {
             		   }
                }
      
-      }]);
+      }]);*/
