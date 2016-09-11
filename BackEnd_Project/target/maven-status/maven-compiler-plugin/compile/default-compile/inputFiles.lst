@@ -1,5 +1,7 @@
-E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\controller\NavController.java
+E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\bean\OutputMessage.java
 E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\dao\UserDetailsDAOImpl.java
 E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\bean\UserDetails.java
+E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\bean\Message.java
+E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\controller\ChatController.java
 E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\controller\UserDetailsController.java
 E:\CollaborationProject\BackEnd_Project\src\main\java\com\niit\dao\UserDetailsDAO.java
